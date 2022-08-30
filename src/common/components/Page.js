@@ -6,7 +6,7 @@ const Page = styled.div`
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    max-width: ${props => (props.nerrow ? maxWidth.nerrowPage : maxWidth.page)};
+    max-width: ${props => (props.nerrow ? maxWidth.nerrowPage : (props.wide ? maxWidth.widePage : maxWidth.page))};
     height: ${props => (props.maxHeight ? '100%' : 'auto')};
 `
 

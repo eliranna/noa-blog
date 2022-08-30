@@ -10,6 +10,7 @@ import { colors, spacing } from '../common/style'
 import ProjectStrip from '../components/ProjectStrip'
 import { Strip, StripTitle } from '../common/components/Strip'
 import { EmojList, EmojListItem } from '../common/components/EmojList'
+import { CardsList, Card } from '../common/components/CardsList'
 
 const Wrapper = styled.div``
 
@@ -44,7 +45,7 @@ function Ludus() {
         </Page>
         <Strip backgroundColor={colors.deepBabyBlue}>
             <Page nerrow>
-                <StripTitle>
+                <StripTitle align={"center"}>
                     Interviews
                 </StripTitle>
                 <Paragraph align={"center"}>
@@ -110,6 +111,42 @@ function Ludus() {
                 </Paragraph>
             </Page>
         </Strip>
+        <Strip backgroundColor={colors.lightred}>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    Pain Points
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    Talking to Ludus potential users helped us to get into the user's mindset, and allowing us to identify 
+                    their pain points during math exams: Test anxiety, lack of motivation, boardom, distractions. 
+                </Paragraph>
+                <Spacer height={spacing.spacing16}/>
+            </Page>
+            <Page wide>
+                <Paragraph align={"left"}>
+                    <CardsList>
+                        <Card emoj={"😱"} title="Test Anxiety"> 
+                            Users are worried about making mistakes in the exams, and those negative thoughts make them stressed.
+                        </Card>
+                        <Card emoj={"😟"} title="Lack of motivation"> 
+                            Users who have difficulty with math often suffer from lack of motivation because they fear to experience more failures.
+                        </Card>
+                        <Card emoj={"😴"} title="Boardom"> 
+                            Users are simply not being stimulated enough by their school exams settings, so they get board quickly.
+                        </Card>
+                        <Card emoj={"🙄"} title="Distractions"> 
+                            Users tend to be distracted from the exams by external factors so they have a hard time concentrate in the exam.
+                        </Card>
+                    </CardsList>
+                </Paragraph>                
+            </Page>
+        </Strip>
+        <Page>
+            <SectionTitle>
+                02  |  Define Phase
+            </SectionTitle>
+            
+        </Page>
     </Wrapper>
   );
 }

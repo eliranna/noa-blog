@@ -1,6 +1,7 @@
 const maxWidth = {
-    page: '896px',
-    nerrowPage: '657px'
+    page: '1083px',
+    nerrowPage: '811px',
+    widePage: '1300px'
 }
 
 const fonts = {
@@ -10,6 +11,7 @@ const fonts = {
 
 const fontSizes = {
     normal: '18px',
+    title: '22px',
     medium: '26px',
     large: '34px'
 }
