@@ -18,7 +18,9 @@ const colors = {
     text: '#37352f',
     babyblue: '#F4FDFC',
     lightred: '#FFEEEE',
-    deepBabyBlue: 'rgba(170,232,224,0.5)'
+    lightBabyBlue: 'rgba(170,232,224,0.5)',
+    deepBabyBlue: 'rgba(170,232,224,1)',
+    white: 'white'
 }
 
 const spacing = {

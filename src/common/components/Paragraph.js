@@ -3,8 +3,8 @@ import { fontSizes, maxWidth } from '../style'
 
 const Paragraph = styled.div`
     font-size: ${fontSizes.normal};
-    text-align: left;
-    line-height: 20px;
+    text-align: ${props => props.align};
+    line-height: 28px;
 `
 
 export default Paragraph; 
