@@ -17,7 +17,7 @@ const CardWrapper = styled.div`
     flex-direction: column;
     margin-bottom: ${spacing.spacing3};
     background-color: ${colors.white};
-    border-radius: 6px;
+    border-radius: 10px;
     margin: ${spacing.spacing4};
     padding: ${spacing.spacing16} ${spacing.spacing8};
     flex-grow: 0;

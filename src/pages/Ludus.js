@@ -14,6 +14,10 @@ import { CardsList, Card } from '../common/components/CardsList'
 
 const Wrapper = styled.div``
 
+const Photo = styled.img`
+    width: 100%;
+`
+
 function Ludus() {
   return (
     <Wrapper>
@@ -145,8 +149,150 @@ function Ludus() {
             <SectionTitle>
                 02  |  Define Phase
             </SectionTitle>
-            
         </Page>
+        <Strip backgroundColor={colors.white} noPadding>
+            <Page nerrow>
+                <StripTitle align={"left"}> 
+                    Competitive audit
+                </StripTitle>
+                <Paragraph align={"left"}>
+                    One of the critical steps when developing a new product is finding out where we stand with the competition. 
+                    Competitive analysis is a necessary part of the design process to help the business gain valuable insight into 
+                    the market, identify the strengths and weaknesses of their products, and develop effective product strategies to 
+                    create winning results. To do so, I looked at the competitors and created a competitive audit with Ludus major competitors. 
+                </Paragraph>
+            </Page>
+            <Spacer height={spacing.spacing32}/>
+            <Page>
+                <Photo src='/assets/ludus/table.jpg'/>               
+            </Page>
+        </Strip>  
+        <Strip backgroundColor={colors.deepBabyBlue}>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    Competitive audit report
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    After listing Ludus’ major competitors products, I analysied the information and came to those conclusions:
+                </Paragraph>
+                <Spacer height={spacing.spacing16}/>
+            </Page>
+            <Page wide>
+                <Paragraph align={"left"}>
+                    <CardsList>
+                        <Card emoj={"👩‍🏫"} title="Virtual teacher - Mascot"> 
+                            Students are guided through the app by a virtual teacher, the app mascot. The mascot gives the students the support, 
+                            encouragement, and guidance they need just as their classroom teacher gives them.
+                        </Card>
+                        <Card emoj={"🧙‍♂️"} title="Virtual student- Avatar"> 
+                            There is a reflection of the student in the form of a personalised Avatar.  
+                            Whenever the students succeed in the app exams, the Avatar levels up their ranks, looks and abilities. 
+                            In fact, the student wants to keep getting better at math so that his avatar can also evolve in the game.
+                        </Card>
+                        <Card emoj={"🗺️"} title="Visual student progress"> 
+                            The student's progress in mathematical subjects is presented visually so that the student can observe it, 
+                            follow it and learn from it. Each app offers a unique progress map that helps students navigate the math topics 
+                            being taught, and also motivate them to continue learning.
+                        </Card>
+                    </CardsList>
+                </Paragraph>                
+            </Page>
+        </Strip>
+        <Strip backgroundColor={colors.white}>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    Value proposition
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    I defined the product’s value proposition that summarize why students would love to use the product. 
+                    I've created a list of all the great features the app can have and sorted them into main categories. 
+                    Next, I connected the benefits to the needs of my users and meets their pain points to identify what was really valuable to them. 
+                    The benefits that did not fit into the users needs, were set aside.
+                </Paragraph>
+            </Page>
+            <Spacer height={spacing.spacing32}/>
+            <Page>
+                <Photo src="/assets/ludus/value.jpg"/>              
+            </Page>
+        </Strip>             
+        <Page>
+            <SectionTitle>
+                03  |  Ideation Phase
+            </SectionTitle>
+        </Page> 
+        <Strip backgroundColor={colors.white} noPadding>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    User flow
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    After listing the main features of the app and deciding to focus on the Personalization feature, 
+                    I anticipated the needs of the user when interacting with my product by outlining a user flow. The user 
+                    flow begins with a user entering the app and continues until the book order confirmation.
+                </Paragraph>
+            </Page>
+            <Spacer height={spacing.spacing32}/>
+            <Page nerrow>
+                <Photo src="/assets/ludus/flow.jpg"/>              
+            </Page>
+        </Strip> 
+        <Strip backgroundColor={colors.white} noPadding>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    Paper wireframes
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    After collecting enough information about our users and necessary features, I sketched paper 
+                    wireframes that represents the skeleton of the  app interface. I created low-fidelity paper 
+                    wireframes for all the possible ideas I could come up with and chose the best ones.
+                </Paragraph>
+            </Page>
+            <Spacer height={spacing.spacing32}/>
+            <Page nerrow>
+                <Photo src="/assets/ludus/wireframe.jpg"/>              
+            </Page>
+        </Strip>  
+        <Strip backgroundColor={colors.white} noPadding>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    Digital wireframes (need to change text)
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    After I have explored multiple ideas for wireframes on paper, and understood which wireframe elements will provide 
+                    the best user experience, it was time to bring my paper wireframe to life digitally to get the structure right and clean.
+                </Paragraph>
+            </Page>
+            <Spacer height={spacing.spacing32}/>
+            <Page>
+                <Photo src="/assets/ludus/dwireframes.jpg"/>              
+            </Page>
+        </Strip>  
+        <Strip backgroundColor={colors.lightred}>
+            <Page nerrow>
+                <StripTitle align={"center"}> 
+                    Visual design (need to change text)
+                </StripTitle>
+                <Paragraph align={"center"}>
+                    At this point I had enough information to start sketching solutions for users pain points. 
+                    I created low-fidelity paper wireframes for all the possible ideas I could come up with. 
+                    I analyzed the screens for general usability and to weed out confusing elements.
+                </Paragraph>
+            </Page>
+            <Spacer height={spacing.spacing32}/>
+            <Page>
+                <Photo src="/assets/ludus/visual.jpg"/>              
+            </Page>
+        </Strip> 
+        <Strip backgroundColor={colors.white}>
+            <Page>
+                <Photo src="/assets/ludus/4visual.jpg"/>              
+            </Page>
+        </Strip>  
+        <Strip backgroundColor={colors.cream}>
+            <Page>
+                <Photo src="/assets/ludus/ludi.jpg"/>              
+            </Page>
+        </Strip>       
     </Wrapper>
   );
 }

@@ -5,6 +5,7 @@ const Strip = styled.div`
     background-color: ${props => props.backgroundColor};
     color: ${props => props.textColor};
     padding: ${spacing.spacing32} 0px;
+    padding-top: ${props => props.noPadding ? '0px' : spacing.spacing32};
 `
 
 const StripTitle = styled.div`
