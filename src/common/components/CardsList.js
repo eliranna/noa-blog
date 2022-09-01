@@ -22,7 +22,7 @@ const CardWrapper = styled.div`
     padding: ${spacing.spacing16} ${spacing.spacing8};
     flex-grow: 0;
     flex-shrink: 0;
-    width: 218px;
+    width: ${props => props.cardWidth}
 `
 
 const Emoj = styled.div`
@@ -42,9 +42,9 @@ const Title = styled.div`
     font-weight: 600;
 `
 
-function Card({children, emoj, title}) {
+function Card({children, emoj, title, cardWidth}) {
   return (
-    <CardWrapper>
+    <CardWrapper cardWidth={cardWidth}>
         <Emoj>
             {emoj}
         </Emoj>

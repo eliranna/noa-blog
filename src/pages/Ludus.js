@@ -129,16 +129,16 @@ function Ludus() {
             <Page wide>
                 <Paragraph align={"left"}>
                     <CardsList>
-                        <Card emoj={"😱"} title="Test Anxiety"> 
+                        <Card emoj={"😱"} title="Test Anxiety" cardWidth="218px"> 
                             Users are worried about making mistakes in the exams, and those negative thoughts make them stressed.
                         </Card>
-                        <Card emoj={"😟"} title="Lack of motivation"> 
+                        <Card emoj={"😟"} title="Lack of motivation" cardWidth="218px"> 
                             Users who have difficulty with math often suffer from lack of motivation because they fear to experience more failures.
                         </Card>
-                        <Card emoj={"😴"} title="Boardom"> 
+                        <Card emoj={"😴"} title="Boardom" cardWidth="218px"> 
                             Users are simply not being stimulated enough by their school exams settings, so they get board quickly.
                         </Card>
-                        <Card emoj={"🙄"} title="Distractions"> 
+                        <Card emoj={"🙄"} title="Distractions" cardWidth="218px"> 
                             Users tend to be distracted from the exams by external factors so they have a hard time concentrate in the exam.
                         </Card>
                     </CardsList>
@@ -180,16 +180,16 @@ function Ludus() {
             <Page wide>
                 <Paragraph align={"left"}>
                     <CardsList>
-                        <Card emoj={"👩‍🏫"} title="Virtual teacher - Mascot"> 
+                        <Card emoj={"👩‍🏫"} title="Virtual teacher - Mascot" cardWidth="350px"> 
                             Students are guided through the app by a virtual teacher, the app mascot. The mascot gives the students the support, 
                             encouragement, and guidance they need just as their classroom teacher gives them.
                         </Card>
-                        <Card emoj={"🧙‍♂️"} title="Virtual student- Avatar"> 
+                        <Card emoj={"🧙‍♂️"} title="Virtual student- Avatar" cardWidth="350px"> 
                             There is a reflection of the student in the form of a personalised Avatar.  
                             Whenever the students succeed in the app exams, the Avatar levels up their ranks, looks and abilities. 
                             In fact, the student wants to keep getting better at math so that his avatar can also evolve in the game.
                         </Card>
-                        <Card emoj={"🗺️"} title="Visual student progress"> 
+                        <Card emoj={"🗺️"} title="Visual student progress" cardWidth="350px"> 
                             The student's progress in mathematical subjects is presented visually so that the student can observe it, 
                             follow it and learn from it. Each app offers a unique progress map that helps students navigate the math topics 
                             being taught, and also motivate them to continue learning.
@@ -212,7 +212,7 @@ function Ludus() {
             </Page>
             <Spacer height={spacing.spacing32}/>
             <Page>
-                <Photo src="/assets/ludus/value.jpg"/>              
+                <Photo src="/assets/ludus/value.jpg"/>
             </Page>
         </Strip>             
         <Page>
@@ -279,13 +279,16 @@ function Ludus() {
                 </Paragraph>
             </Page>
             <Spacer height={spacing.spacing32}/>
-            <Page>
-                <Photo src="/assets/ludus/visual.jpg"/>              
-            </Page>
         </Strip> 
         <Strip backgroundColor={colors.white}>
             <Page>
-                <Photo src="/assets/ludus/4visual.jpg"/>              
+                <Photo src="/assets/ludus/v1.jpg"/> 
+                <Spacer height={spacing.spacing32}/>
+                <Photo src="/assets/ludus/v2.jpg"/> 
+                <Spacer height={spacing.spacing32}/>
+                <Photo src="/assets/ludus/v3.jpg"/> 
+                <Spacer height={spacing.spacing32}/>
+                <Photo src="/assets/ludus/v4.jpg"/>                            
             </Page>
         </Strip>  
         <Strip backgroundColor={colors.cream}>
