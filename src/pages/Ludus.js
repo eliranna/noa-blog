@@ -264,7 +264,7 @@ function Ludus() {
                 <Photo src="/assets/ludus/wireframe.jpg"/>              
             </Page>
         </Strip>  
-        <Strip backgroundColor={colors.white} noPadding>
+        <Strip backgroundColor={colors.gray} >
             <Page nerrow>
                 <StripTitle align={"center"}> 
                     Digital wireframes (need to change text)
@@ -276,7 +276,7 @@ function Ludus() {
             </Page>
             <Spacer height={spacing.spacing32}/>
             <Page>
-                <Photo src="/assets/ludus/dwireframes.jpg"/>              
+                <Photo src="/assets/ludus/dw.png"/>              
             </Page>
         </Strip>  
         <Strip backgroundColor={colors.lightred}>
@@ -289,6 +289,10 @@ function Ludus() {
                     I created low-fidelity paper wireframes for all the possible ideas I could come up with. 
                     I analyzed the screens for general usability and to weed out confusing elements.
                 </Paragraph>
+                <Spacer height={spacing.spacing32}/>
+                <Page>
+                    <Photo src="/assets/ludus/x3.png"/>              
+                </Page>
             </Page>
             <Spacer height={spacing.spacing32}/>
         </Strip> 
