@@ -17,8 +17,15 @@ const Cover = styled.div`
     justify-content: center;
 `
 
+const CoverBackground = styled.div`
+    background-image: url("/assets/bookstore/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+`
+
 const Roles = styled.div`
-    background-color: ${colors.lightred};
+    background-color: ${colors.lightYellow};
     width: 100%;
     height: 130px;
 `
@@ -46,7 +53,7 @@ const Role = styled.div`
     font-size: ${fontSizes.normal};
 `
 
-function ProjectStrip({ roles, cover }) {
+function ProjectStrip({ roles, cover, spread }) {
 
   const _roles = (roles) => {
     return roles.map(role => {
@@ -60,11 +67,15 @@ function ProjectStrip({ roles, cover }) {
 
   return (
     <Wrapper>
-        <Cover>
-            <Page nerrow>
-                <Photo src={cover}/>
-            </Page>
-        </Cover>
+        {spread ? (
+            <CoverBackground/>
+        ) : (
+            <Cover>
+                <Page nerrow>
+                    <Photo src={cover}/>
+                </Page>
+            </Cover>            
+        )}
         <Roles>
             <Page nerrow maxHeight>
                 <RolesPanel>

@@ -24,7 +24,10 @@ const colors = {
     deepBabyBlue: 'rgba(170,232,224,1)',
     white: 'white',
     lightGray: '#F7F7F7',
-    cream: '#FFF9E7'
+    cream: '#FFF9E7',
+    lightYellow: '#FFFDEE',
+    green: '#DAEFEC',
+    gray: '#F0F0F0'
 }
 
 const spacing = {

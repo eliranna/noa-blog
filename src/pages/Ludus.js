@@ -6,7 +6,7 @@ import Spacer from '../common/components/Spacer'
 import Paragraph from '../common/components/Paragraph'
 import Quote from '../common/components/Quote'
 import SectionTitle from '../common/components/SectionTitle'
-import { colors, spacing } from '../common/style'
+import { colors, fontSizes, spacing } from '../common/style'
 import ProjectStrip from '../components/ProjectStrip'
 import { Strip, StripTitle } from '../common/components/Strip'
 import { EmojList, EmojListItem } from '../common/components/EmojList'
@@ -16,6 +16,20 @@ const Wrapper = styled.div``
 
 const Photo = styled.img`
     width: 100%;
+`
+
+const StripSpecial = styled(Strip)`
+    padding-bottom: 0px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+`
+
+const Greeting = styled.div`
+    text-align: center;
+    margin-bottom: 220px;
+    font-size: ${fontSizes.large};
 `
 
 function Ludus() {
@@ -58,25 +72,23 @@ function Ludus() {
                     We were guided by the following questions: 
                 </Paragraph>
                 <Spacer height={spacing.spacing16}/>
-                <Paragraph align={"left"}>
-                    <ol>
-                        <li>
-                            What do you enjoy most about math class?
-                        </li>
-                        <li>
-                            How did you feel during the test?
-                        </li>
-                        <li>
-                            How did you prepare for the test?
-                        </li>
-                        <li>
-                            What was difficult for you during the test?
-                        </li>
-                        <li>
-                            What will help you overcome the difficulties during the next exam?
-                        </li>
-                    </ol>
-                </Paragraph>
+                <CardsList>
+                    <Card cardWidth="250px" emoj={"🍿"}> 
+                        What do you enjoy most about math class?
+                    </Card>
+                    <Card cardWidth="250px" emoj={"🌈"}> 
+                        How did you feel during the test?
+                    </Card>
+                    <Card cardWidth="250px" emoj={"🧘"}> 
+                        How did you prepare for the test?
+                    </Card>
+                    <Card cardWidth="250px" emoj={"🏋️"}> 
+                        What was difficult for you during the test?
+                    </Card>
+                    <Card cardWidth="250px" emoj={"🫶"}> 
+                        What will help you overcome the difficulties during the next exam?
+                    </Card>
+                </CardsList>                
             </Page>
         </Strip>
         <Strip backgroundColor={colors.white}>
@@ -295,7 +307,13 @@ function Ludus() {
             <Page>
                 <Photo src="/assets/ludus/ludi.jpg"/>              
             </Page>
-        </Strip>       
+        </Strip> 
+        <StripSpecial backgroundColor={colors.white}>
+            <Greeting>
+                Thank you for watching!
+            </Greeting>
+            <Photo src="/assets/ludus/girls.jpg"/>              
+        </StripSpecial>       
     </Wrapper>
   );
 }

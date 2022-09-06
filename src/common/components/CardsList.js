@@ -26,7 +26,6 @@ const CardWrapper = styled.div`
 `
 
 const Emoj = styled.div`
-    margin-right: ${spacing.spacing4};
     font-size: 40px;
 
 `
