@@ -16,16 +16,17 @@ const ListItemWrapper = styled.div`
 
 const Emoj = styled.div`
     margin-right: ${spacing.spacing4};
+    font-size: ${props => props.emojSize}
 `
 
 const Caption = styled.div`
 
 `
 
-function EmojListItem({children, emoj}) {
+function EmojListItem({children, emoj, emojSize}) {
   return (
     <ListItemWrapper>
-        <Emoj>
+        <Emoj emojSize={emojSize}>
             {emoj}
         </Emoj>
         <Caption>

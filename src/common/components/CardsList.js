@@ -27,6 +27,7 @@ const CardWrapper = styled.div`
 
 const Emoj = styled.div`
     font-size: 40px;
+    font-size: ${props => props.emojSize}
 
 `
 
@@ -41,13 +42,13 @@ const Title = styled.div`
     font-weight: 600;
 `
 
-function Card({children, emoj, title, cardWidth}) {
+function Card({children, emoj, title, cardWidth, emojSize}) {
   return (
     <CardWrapper cardWidth={cardWidth}>
-        <Emoj>
+        <Emoj emojSize={emojSize}>
             {emoj}
         </Emoj>
-        <Spacer height={spacing.spacing8}/>
+        {title && <Spacer height={spacing.spacing8}/>}
         <Title>
             {title}
         </Title>

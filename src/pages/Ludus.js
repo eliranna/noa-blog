@@ -32,6 +32,12 @@ const Greeting = styled.div`
     font-size: ${fontSizes.large};
 `
 
+const Mark = styled.span`
+    mark {
+        background-color: ${colors.lightBabyBlue};
+    }
+`
+
 function Ludus() {
   return (
     <Wrapper>
@@ -73,19 +79,19 @@ function Ludus() {
                 </Paragraph>
                 <Spacer height={spacing.spacing16}/>
                 <CardsList>
-                    <Card cardWidth="250px" emoj={"🍿"}> 
+                    <Card cardWidth="250px" emoj={"🍿"} emojSize={"50px"}> 
                         What do you enjoy most about math class?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🌈"}> 
+                    <Card cardWidth="250px" emoj={"🌈"} emojSize={"50px"}> 
                         How did you feel during the test?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🧘"}> 
+                    <Card cardWidth="250px" emoj={"🧘"} emojSize={"50px"}> 
                         How did you prepare for the test?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🏋️"}> 
+                    <Card cardWidth="250px" emoj={"🏋️"} emojSize={"50px"}> 
                         What was difficult for you during the test?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🫶"}> 
+                    <Card cardWidth="250px" emoj={"🫶"} emojSize={"50px"}> 
                         What will help you overcome the difficulties during the next exam?
                     </Card>
                 </CardsList>                
@@ -105,23 +111,28 @@ function Ludus() {
                 <Spacer height={spacing.spacing16}/>
                 <Paragraph align={"left"}>
                     <EmojList>
-                        <EmojListItem emoj={"🎃"}> 
-                            Pictures: Helps illustrate important points
+                        <EmojListItem emoj={"📷"} emojSize={"30px"}> 
+                            <Mark><mark>Pictures:</mark></Mark> Helps illustrate important points
                         </EmojListItem>
-                        <EmojListItem emoj={"🎃"}> 
-                            Practice tests: helps to reduce anxiety
+                        <Spacer height={spacing.spacing6}></Spacer>
+                        <EmojListItem emoj={"✍️"} emojSize={"30px"}> 
+                            <Mark><mark>Practice tests:</mark></Mark> helps to reduce anxiety
                         </EmojListItem>
-                        <EmojListItem emoj={"🎃"}> 
-                            Group work: Helps in learning quicker
+                        <Spacer height={spacing.spacing6}></Spacer>
+                        <EmojListItem emoj={"🤲"} emojSize={"30px"}> 
+                            <Mark><mark>Teamwork:</mark></Mark> Helps in learning quicker
                         </EmojListItem>
-                        <EmojListItem emoj={"🎃"}> 
-                            Games: Adds instant engagement
+                        <Spacer height={spacing.spacing6}></Spacer>
+                        <EmojListItem emoj={"🕹️"} emojSize={"30px"}> 
+                            <Mark><mark>Games:</mark></Mark> Adds instant engagement
                         </EmojListItem>
-                        <EmojListItem emoj={"🎃"}> 
-                            Taking a break: Helps to effectively retain information
+                        <Spacer height={spacing.spacing6}></Spacer>
+                        <EmojListItem emoj={"⏸️"} emojSize={"30px"}> 
+                            <Mark><mark>Taking a break:</mark></Mark> Helps to effectively retain information
                         </EmojListItem>
-                        <EmojListItem emoj={"🎃"}> 
-                            Reading out loud: Makes it easier for kids to understand
+                        <Spacer height={spacing.spacing6}></Spacer>
+                        <EmojListItem emoj={"📢"} emojSize={"30px"}> 
+                            <Mark><mark>Reading out loud:</mark></Mark> Makes it easier for kids to understand
                         </EmojListItem>
                     </EmojList>
                 </Paragraph>

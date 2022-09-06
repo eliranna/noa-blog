@@ -74,19 +74,19 @@ function Bookstore() {
                 </Paragraph>
                 <Spacer height={spacing.spacing16}/>
                 <CardsList>
-                    <Card cardWidth="250px" emoj={"🍿"}> 
+                    <Card cardWidth="250px" emoj={"🔍"}> 
                         Please describe the way you search and buy a book
                     </Card>
-                    <Card cardWidth="250px" emoj={"🌈"}> 
+                    <Card cardWidth="250px" emoj={"✨"}> 
                         What are the reasons you buy a children's book?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🧘"}> 
+                    <Card cardWidth="250px" emoj={"📚"}> 
                         What leads you in choosing a book?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🏋️"}> 
+                    <Card cardWidth="250px" emoj={"🥹"}> 
                         What difficulties did you encounter while searching for a book to buy?
                     </Card>
-                    <Card cardWidth="250px" emoj={"🫶"}> 
+                    <Card cardWidth="250px" emoj={"🚀"}> 
                         What would you improve in the experience of searching and buying books?
                     </Card>
                 </CardsList>                
@@ -152,7 +152,7 @@ function Bookstore() {
                 02  |  Define Phase
             </SectionTitle>
         </Page>
-        <Strip backgroundColor={colors.white}>
+        <Strip backgroundColor={colors.white} noPadding>
             <Page nerrow>
                 <StripTitle align={"left"}> 
                     Value proposition
