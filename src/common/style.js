@@ -1,6 +1,6 @@
 const maxWidth = {
     page: '1083px',
-    nerrowPage: '811px',
+    nerrowPage: '745px',
     widePage: '1300px'
 }
 

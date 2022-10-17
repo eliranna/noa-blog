@@ -11,21 +11,21 @@ const Wrapper = styled.div`
 const Cover = styled.div`
     width: 100%;
     height: 750px;
-    background-color: ${colors.babyblue};
+    background-color: ${props => props.color};
     display: flex;
     flex-direction: column;
     justify-content: center;
 `
 
 const CoverBackground = styled.div`
-    background-image: url("/assets/bookstore/cover.jpg");
+    background-image: ${props => `url(${props.img})`};
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
 `
 
 const Roles = styled.div`
-    background-color: ${colors.lightYellow};
+    background-color: ${props => props.color};
     width: 100%;
     height: 130px;
 `
@@ -53,14 +53,19 @@ const Role = styled.div`
     font-size: ${fontSizes.normal};
 `
 
-function ProjectStrip({ roles, cover, spread }) {
+function ProjectStrip({ roles, cover, spread, rolesColor, coverColor }) {
 
   const _roles = (roles) => {
-    return roles.map(role => {
+    return roles.map((role,index) => {
         return (
-            <Role>
-                {role}
-            </Role>
+            <>
+                <Role>
+                    {role}
+                </Role>
+                {(index < roles.length -1) && (<Role>
+                    •
+                </Role>)}
+            </>
         )
     })
   }
@@ -68,20 +73,23 @@ function ProjectStrip({ roles, cover, spread }) {
   return (
     <Wrapper>
         {spread ? (
-            <CoverBackground/>
+            <CoverBackground img={cover}/>
         ) : (
-            <Cover>
+            <Cover color={coverColor}>
                 <Page nerrow>
                     <Photo src={cover}/>
                 </Page>
             </Cover>            
         )}
-        <Roles>
+        <Roles color={rolesColor}>
             <Page nerrow maxHeight>
                 <RolesPanel>
                     <RolesTitle>
                         My Roles
                     </RolesTitle>
+                    <Role>
+                    
+                    </Role>
                     {_roles(roles)}
                 </RolesPanel>
             </Page>

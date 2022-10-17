@@ -15,12 +15,11 @@ import { CardsList, Card } from '../common/components/CardsList'
 const Wrapper = styled.div``
 
 const Photo = styled.img`
-    width: 100%;
+    width: ${props => props.width ? props.width : '100%'};
 `
 
 const StripSpecial = styled(Strip)`
     padding-bottom: 0px;
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -28,7 +27,8 @@ const StripSpecial = styled(Strip)`
 
 const Greeting = styled.div`
     text-align: center;
-    margin-bottom: 220px;
+    margin-bottom: 118px;
+    margin-top: 30px;
     font-size: ${fontSizes.large};
 `
 
@@ -36,6 +36,11 @@ const Mark = styled.span`
     mark {
         background-color: ${colors.lightBabyBlue};
     }
+`
+
+const Centered = styled.div`
+    display: flex;
+    justify-content: center;
 `
 
 function Ludus() {
@@ -47,7 +52,7 @@ function Ludus() {
             </IntroCaption>
         </Page>
         <Spacer height={spacing.spacing32}/>
-        <ProjectStrip roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/ludus/cover.jpg"/>
+        <ProjectStrip spread roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/ludus/cover.jpg" coverColor={colors.lightBabyBlue} rolesColor={colors.lightred}/>
         <Spacer height={spacing.spacing32}/>
         <Page nerrow>
             <Paragraph>
@@ -61,6 +66,12 @@ function Ludus() {
                 (and also ours) attention time is shortened from year to year. But still, <mark>students are asked to solve exams with a pen 
                 and paper just as they did 200 years ago.</mark>
             </Quote>
+            <Spacer height={spacing.spacing16}/>
+            <Paragraph>
+                Times have changed and so the practicing and testing techniques are now obsolete, unappealing and monotonic for children. 
+                Ludus app aimed to solve those problems. In this case study I will present the research we have conducted and the product I 
+                designed to make a better ux for our studens.
+            </Paragraph>
         </Page>
         <Page>
             <SectionTitle>
@@ -77,24 +88,10 @@ function Ludus() {
                     The goal was to understand the difficulties and the fun parts of studing and testing in math. 
                     We were guided by the following questions: 
                 </Paragraph>
-                <Spacer height={spacing.spacing16}/>
-                <CardsList>
-                    <Card cardWidth="250px" emoj={"🍿"} emojSize={"50px"}> 
-                        What do you enjoy most about math class?
-                    </Card>
-                    <Card cardWidth="250px" emoj={"🌈"} emojSize={"50px"}> 
-                        How did you feel during the test?
-                    </Card>
-                    <Card cardWidth="250px" emoj={"🧘"} emojSize={"50px"}> 
-                        How did you prepare for the test?
-                    </Card>
-                    <Card cardWidth="250px" emoj={"🏋️"} emojSize={"50px"}> 
-                        What was difficult for you during the test?
-                    </Card>
-                    <Card cardWidth="250px" emoj={"🫶"} emojSize={"50px"}> 
-                        What will help you overcome the difficulties during the next exam?
-                    </Card>
-                </CardsList>                
+                <Spacer height={spacing.spacing16}/>                             
+            </Page>
+            <Page>
+                <Photo src='/assets/ludus/interviews.png'/> 
             </Page>
         </Strip>
         <Strip backgroundColor={colors.white}>
@@ -203,16 +200,16 @@ function Ludus() {
             <Page wide>
                 <Paragraph align={"left"}>
                     <CardsList>
-                        <Card emoj={"👩‍🏫"} title="Virtual teacher - Mascot" cardWidth="350px"> 
+                        <Card emoj={"👩‍🏫"} title="Virtual teacher - Mascot" cardWidth="309px"> 
                             Students are guided through the app by a virtual teacher, the app mascot. The mascot gives the students the support, 
                             encouragement, and guidance they need just as their classroom teacher gives them.
                         </Card>
-                        <Card emoj={"🧙‍♂️"} title="Virtual student- Avatar" cardWidth="350px"> 
+                        <Card emoj={"🧙‍♂️"} title="Virtual student- Avatar" cardWidth="309px"> 
                             There is a reflection of the student in the form of a personalised Avatar.  
                             Whenever the students succeed in the app exams, the Avatar levels up their ranks, looks and abilities. 
                             In fact, the student wants to keep getting better at math so that his avatar can also evolve in the game.
                         </Card>
-                        <Card emoj={"🗺️"} title="Visual student progress" cardWidth="350px"> 
+                        <Card emoj={"🗺️"} title="Visual student progress" cardWidth="309px"> 
                             The student's progress in mathematical subjects is presented visually so that the student can observe it, 
                             follow it and learn from it. Each app offers a unique progress map that helps students navigate the math topics 
                             being taught, and also motivate them to continue learning.
@@ -233,7 +230,7 @@ function Ludus() {
                     The benefits that did not fit into the users needs, were set aside.
                 </Paragraph>
             </Page>
-            <Spacer height={spacing.spacing32}/>
+            <Spacer height={'107px'}/>
             <Page>
                 <Photo src="/assets/ludus/value.jpg"/>
             </Page>
@@ -254,7 +251,7 @@ function Ludus() {
                     flow begins with a user entering the app and continues until the book order confirmation.
                 </Paragraph>
             </Page>
-            <Spacer height={spacing.spacing32}/>
+            <Spacer height={'107px'}/>
             <Page nerrow>
                 <Photo src="/assets/ludus/flow.jpg"/>              
             </Page>
@@ -270,7 +267,7 @@ function Ludus() {
                     wireframes for all the possible ideas I could come up with and chose the best ones.
                 </Paragraph>
             </Page>
-            <Spacer height={spacing.spacing32}/>
+            <Spacer height={'107px'}/>
             <Page nerrow>
                 <Photo src="/assets/ludus/wireframe.jpg"/>              
             </Page>
@@ -278,14 +275,14 @@ function Ludus() {
         <Strip backgroundColor={colors.gray} >
             <Page nerrow>
                 <StripTitle align={"center"}> 
-                    Digital wireframes (need to change text)
+                    Digital wireframes
                 </StripTitle>
                 <Paragraph align={"center"}>
                     After I have explored multiple ideas for wireframes on paper, and understood which wireframe elements will provide 
                     the best user experience, it was time to bring my paper wireframe to life digitally to get the structure right and clean.
                 </Paragraph>
             </Page>
-            <Spacer height={spacing.spacing32}/>
+            <Spacer height={'107px'}/>
             <Page>
                 <Photo src="/assets/ludus/dw.png"/>              
             </Page>
@@ -293,34 +290,36 @@ function Ludus() {
         <Strip backgroundColor={colors.lightred}>
             <Page nerrow>
                 <StripTitle align={"center"}> 
-                    Visual design (need to change text)
+                    Visual design
                 </StripTitle>
                 <Paragraph align={"center"}>
                     At this point I had enough information to start sketching solutions for users pain points. 
                     I created low-fidelity paper wireframes for all the possible ideas I could come up with. 
                     I analyzed the screens for general usability and to weed out confusing elements.
                 </Paragraph>
-                <Spacer height={spacing.spacing32}/>
-                <Page>
-                    <Photo src="/assets/ludus/x3.png"/>              
-                </Page>
+                <Spacer height={'107px'}/>             
             </Page>
-            <Spacer height={spacing.spacing32}/>
+            <Page>
+                <Photo src="/assets/ludus/x3.png"/> 
+            </Page>
         </Strip> 
-        <Strip backgroundColor={colors.white}>
+        <Strip backgroundColor={colors.white} noPadding>
+            <Spacer height={'60px'}/> 
             <Page>
                 <Photo src="/assets/ludus/v1.jpg"/> 
-                <Spacer height={spacing.spacing32}/>
+                <Spacer height={'60px'}/> 
                 <Photo src="/assets/ludus/v2.jpg"/> 
-                <Spacer height={spacing.spacing32}/>
+                <Spacer height={'60px'}/> 
                 <Photo src="/assets/ludus/v3.jpg"/> 
-                <Spacer height={spacing.spacing32}/>
+                <Spacer height={'60px'}/> 
                 <Photo src="/assets/ludus/v4.jpg"/>                            
             </Page>
         </Strip>  
-        <Strip backgroundColor={colors.cream}>
+        <Strip backgroundColor={colors.cream} noPadding noPaddingBottom>
             <Page>
-                <Photo src="/assets/ludus/ludi.jpg"/>              
+                <Centered>
+                    <Photo src="/assets/ludus/Group 219.jpeg" width={'900px'}/> 
+                </Centered>          
             </Page>
         </Strip> 
         <StripSpecial backgroundColor={colors.white}>

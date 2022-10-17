@@ -22,7 +22,8 @@ const CardWrapper = styled.div`
     padding: ${spacing.spacing16} ${spacing.spacing8};
     flex-grow: 0;
     flex-shrink: 0;
-    width: ${props => props.cardWidth}
+    width: ${props => props.cardWidth};
+    box-sizing: border-box;
 `
 
 const Emoj = styled.div`

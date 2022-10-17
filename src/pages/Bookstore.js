@@ -47,7 +47,7 @@ function Bookstore() {
             </IntroCaption>
         </Page>
         <Spacer height={spacing.spacing32}/>
-        <ProjectStrip spread={true} roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/bookstore/cover.jpg"/>
+        <ProjectStrip spread={true} roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/bookstore/cover.jpg" rolesColor={colors.lightYellow}/>
         <Spacer height={spacing.spacing32}/>
         <Page nerrow>
             <Paragraph>
