@@ -53,12 +53,17 @@ const Links = styled.div`
     }
 `
 
+const Mark = styled.mark`
+    background-color: ${colors.marker};
+`
+
 function Home() {
   return (
     <Wrapper>
         <Page nerrow>
             <IntroCaption>
-                Hey there! I’m Noa, a product designer with 3+ years experience sketching, building and coaching. I love fun UI, collaboration and making helpful products that connect people.
+                Hey there! I’m Noa, a <Mark>Product Designer</Mark> with 3+ years experience sketching, 
+                building and coaching. I love fun UI, collaboration and making helpful products that connect people.
             </IntroCaption>
             <Spacer height={spacing.spacing32}/>
             <ProjectsList>
