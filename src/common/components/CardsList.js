@@ -27,7 +27,7 @@ const CardWrapper = styled.div`
 `
 
 const Emoj = styled.div`
-    font-size: 40px;
+    font-size: 50px;
     font-size: ${props => props.emojSize}
 
 `

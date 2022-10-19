@@ -18,6 +18,10 @@ const Photo = styled.img`
     width: ${props => props.width ? props.width : '100%'};
 `
 
+const PhotoGirls = styled.img`
+    width: ${props => props.width ? props.width : '100%'};
+    margin-bottom: -115px;
+`
 const StripSpecial = styled(Strip)`
     padding-bottom: 0px;
     display: flex;
@@ -51,7 +55,7 @@ function Ludus() {
                 Case Study: Ludus app. The engaging exam process feature that motivates students to practice and excell in math
             </IntroCaption>
         </Page>
-        <Spacer height={spacing.spacing32}/>
+        <Spacer height={"100px"}/>
         <ProjectStrip spread roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/ludus/cover.jpg" coverColor={colors.lightBabyBlue} rolesColor={colors.lightred}/>
         <Spacer height={spacing.spacing32}/>
         <Page nerrow>
@@ -326,7 +330,7 @@ function Ludus() {
             <Greeting>
                 Thank you for watching!
             </Greeting>
-            <Photo src="/assets/ludus/girls.jpg"/>              
+            <PhotoGirls src="/assets/ludus/girls.jpg"/>              
         </StripSpecial>       
     </Wrapper>
   );
