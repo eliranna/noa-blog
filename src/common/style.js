@@ -28,7 +28,8 @@ const colors = {
     lightYellow: '#FFFDEE',
     green: '#DAEFEC',
     gray: '#F0F0F0',
-    marker: '#FEF6CF'
+    marker: '#FEF6CF',
+    lightOceanBlue: '#EFF7FF'
 }
 
 const spacing = {

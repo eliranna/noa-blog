@@ -22,6 +22,7 @@ const CoverBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
+    background-color: ${props => props.backColor ? props.backColor : null};
 `
 
 const Roles = styled.div`
@@ -73,7 +74,7 @@ function ProjectStrip({ roles, cover, spread, rolesColor, coverColor }) {
   return (
     <Wrapper>
         {spread ? (
-            <CoverBackground img={cover}/>
+            <CoverBackground img={cover} backColor={coverColor}/>
         ) : (
             <Cover color={coverColor}>
                 <Page nerrow>
