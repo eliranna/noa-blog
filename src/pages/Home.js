@@ -47,13 +47,13 @@ function Home() {
                 <Spacer height={spacing.spacing16}/>
                 <Project>
                     <Link to="/projects/ludus">
-                        <Cover src="/assets/ludus/cover2.jpeg"/>
+                        <Cover src="/assets/ludus/ludus-cover.jpeg"/>
                     </Link>
                 </Project>
                 <Spacer height={spacing.spacing16}/> 
                 <Project>
                     <Link to="/projects/trips">
-                        <Cover src="/assets/trips/10.png"/>
+                        <Cover src="/assets/trips/trips-cover.jpg"/>
                     </Link>
                 </Project>
             </ProjectsList>

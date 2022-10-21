@@ -69,7 +69,7 @@ function Trips() {
               </IntroCaption>
           </Page>
           <Spacer height={"100px"}/>
-          <ProjectStrip spread roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/trips/10.png" coverColor={null} rolesColor={colors.lightOceanBlue}/>
+          <ProjectStrip bottom roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/trips/new with box.png" coverColor={colors.egg} rolesColor={colors.lightOceanBlue}/>
           <Spacer height={spacing.spacing32}/>
           <Page nerrow>
               <Paragraph>

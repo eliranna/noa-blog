@@ -14,7 +14,7 @@ const Cover = styled.div`
     background-color: ${props => props.color};
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: ${props => props.bottom ? 'flex-end' : 'center'};
 `
 
 const CoverBackground = styled.div`
@@ -32,8 +32,9 @@ const Roles = styled.div`
 `
 
 const Photo = styled.img`
-    width: 100%;
+    width: ${props => props.bottom ? '70%' : '100%'};
     height: auto;
+    align-self: ${props => props.bottom ? 'center' : null};
 `
 
 const RolesPanel = styled.div`
@@ -54,7 +55,7 @@ const Role = styled.div`
     font-size: ${fontSizes.normal};
 `
 
-function ProjectStrip({ roles, cover, spread, rolesColor, coverColor }) {
+function ProjectStrip({ roles, cover, spread, rolesColor, coverColor, bottom }) {
 
   const _roles = (roles) => {
     return roles.map((role,index) => {
@@ -76,10 +77,14 @@ function ProjectStrip({ roles, cover, spread, rolesColor, coverColor }) {
         {spread ? (
             <CoverBackground img={cover} backColor={coverColor}/>
         ) : (
-            <Cover color={coverColor}>
-                <Page nerrow>
-                    <Photo src={cover}/>
-                </Page>
+            <Cover color={coverColor} bottom={bottom}>
+                {!bottom ? (
+                    <Page nerrow>
+                        <Photo src={cover}/>
+                    </Page>
+                ) : (
+                    <Photo src={cover} bottom={bottom}/>
+                )}
             </Cover>            
         )}
         <Roles color={rolesColor}>

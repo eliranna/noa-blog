@@ -56,7 +56,7 @@ function Ludus() {
             </IntroCaption>
         </Page>
         <Spacer height={"100px"}/>
-        <ProjectStrip spread roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/ludus/cover.jpg" coverColor={colors.lightBabyBlue} rolesColor={colors.lightred}/>
+        <ProjectStrip spread roles={['UX Desinger', 'UX Researcher', 'Visual Desinger']} cover="/assets/ludus/ludus-cover.jpeg" coverColor={colors.lightBabyBlue} rolesColor={colors.lightBabyBluetrans}/>
         <Spacer height={spacing.spacing32}/>
         <Page nerrow>
             <Paragraph>
