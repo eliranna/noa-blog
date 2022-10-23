@@ -35,7 +35,7 @@ function Home() {
     <Wrapper>
         <Page nerrow>
             <IntroCaption>
-                Hey there! I'm Noa, a <Mark>UX/UI designer </Mark>experienced in UX research and Visual Design. I'm excited about creating delightful digital experiences that help & inspire people.
+                Hey there! I'm Noa, a <Mark>UX/UI designer</Mark>, specializing in carefully-crafted apps and web design. With an abiding enthusiasm for aesthetics, I endeavor to create innovative approaches for users that solve problems, meet needs, and improve experiences.
             </IntroCaption>
             <Spacer height={'100px'}/>
             <ProjectsList>
