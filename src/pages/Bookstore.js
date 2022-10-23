@@ -254,11 +254,11 @@ function Bookstore() {
         <Spacer height={'60px'}/>
         <Strip backgroundColor={colors.white} noPadding>
             <Page>
-                <Photo src="/assets/bookstore/1.jpg"/> 
+                <Photo src="/assets/bookstore/3.jpg"/> 
                 <Spacer height={'60px'}/>
                 <Photo src="/assets/bookstore/2.jpg"/> 
                 <Spacer height={'60px'}/>
-                <Photo src="/assets/bookstore/3.jpg"/>                           
+                <Photo src="/assets/bookstore/1.jpg"/>                           
             </Page>
         </Strip>  
         <Strip backgroundColor={colors.lightYellow}>
