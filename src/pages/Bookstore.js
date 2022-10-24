@@ -50,11 +50,7 @@ function Bookstore() {
         <Page nerrow>
             <Paragraph>
                 UX design for a childrens bookstore mobile app that offers suitable age and content books for childrens.
-            </Paragraph>
-            <Spacer height={spacing.spacing16}/>            
-            <Paragraph>
-                As a new mom to a sweet little boy, I wanted to find some nice books he could read and learn from. Sounds easy right? So I thought. It appears that most bookstore apps are not very child-oriented, and finding the right books for age and content has become quite a challenge. So I have decided to put on my UX designer hat and go out into the wild to explore new ideas and solutions for such apps. 
-            </Paragraph>
+            </Paragraph>          
             <Spacer height={spacing.spacing16}/>
             <Quote markColor={colors.marker}>
                 Parents are struggling in finding content-appropriate books for their children. 
